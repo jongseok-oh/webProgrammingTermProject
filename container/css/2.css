@@ -1,0 +1,37 @@
+body {
+  background-color: #fef6e4;
+}
+.sign {
+  text-align: right;
+  padding: 10px;
+}
+#sign {
+  text-align: center;
+  background-color: #fae7a5;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+img {
+  text-align: left;
+  width: 5%;
+  padding: 20pt 20pt;
+}
+#value {
+  width: 70%;
+  height: 100%;
+}
+#search {
+  margin-top: 10%;
+  text-align: center;
+  height: 100%;
+  padding: 4pt 2pt 4pt 2pt;
+}
+
+input {
+  height: 30pt;
+}
+
+.result {
+  box-shadow: 5px 5px 5px 5px gray;
+  height: 0px;
+}

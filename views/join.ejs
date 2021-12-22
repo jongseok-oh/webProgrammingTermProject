@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Piece🍰 : Sign in</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+        body {background-color: #fef6e4;}
+        img { text-align: left; width: 5%; padding: 20pt 20pt;}
+        .id { margin: left 30%; height: 20pt; font-size: 20pt;}
+        input { height: 20pt; padding-top:5px; width:100%;}
+        .buttons { text-align: center; width: fit-content; border-radius: 20%;}
+        div { margin-left: 30%; margin-bottom: 5%; margin-right:30%;}
+    </style>
+
+</head>
+<body>
+    
+    <a href="./"><img src="/img/piece-of-cake.png" alt="돌아가기"></a>
+    
+    <div class="id">
+        <label><b>Sign Up...</b></label> 
+    </div>
+    <form id ="join" action="/join" method="post">
+        <div class="id" >
+            <label>ID : <input id="id" type="text" name ="ID" required></label> 
+        </div>
+        <div class="id" >
+            <label>nickname : <input type="text" name = "NickName" required></label>
+        </div>
+        <div class="id" >
+            <label>phone : <input type="text" name = "PhoneNum" required></label>
+        </div>
+        <div class="id" >
+            <label>Password : <input id="Password" type="password" name = "Password" required></label>
+        </div>
+        <div class="buttons">
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>

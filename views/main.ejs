@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Piece🍰</title>
+    <style>
+        body { 
+            background-color: #fef6e4; 
+            @font-face {
+                font-family: 'OTWelcomeRA';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }}
+        .sign { text-align: right;}
+        #sign { text-align: center;  background-color: #FAE7A5; 
+            border-radius: 20px; padding: 10px 10px;}
+        img {
+            padding-top: 5%;padding-bottom: 3%;
+            width: 20%; display: block; text-align: center; margin: auto; 
+        }
+        .button {
+            text-align: center; padding:0 100pt;
+        }
+        .box:hover { background-color: #f582ae;}
+        input{
+            text-align: center; border-radius: 20px; margin:10px 0; padding:10px 12px;   
+        }
+        .box {
+            font-size: 20px; width:20%; border:0; background-color: #FAE7A5; margin: 20pt;
+        }
+        footer { padding-top:20px; text-align: right; font-size: 10pt;}
+    </style>
+</head>
+<body>
+    <div class="sign">
+        <a href='<%=data[2]%>' ><input type="button" id="login" value='<%=data[0]%>'></a>
+    </div>
+    <a href="../home"><img src='<%= data[1]%>' class="logo" alt="Piece🍰"></a>
+
+    <div class="button">
+    <a href="./home/1"><input type="button" class="box" value= "Analysis Nutrients" ></a>
+    <a href="./home/2"><input type="button" class="box" value= "Search Recipe" ></a>
+    <a href="./home/3"><input type="button" class="box" value= "Today's Diet" ></a> 
+    <a href="./home/FAQ"><input type="button" class="box" value= "Contact Us" ></a>
+    </div>
+</body>
+
+<footer>
+    웹프로그래밍 팀 프로젝트
+    <a href='https://www.edamam.com/'><img src='/img/Edamam_Badge.svg'></a>
+</footer>
+</html>

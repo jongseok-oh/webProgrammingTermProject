@@ -1,0 +1,147 @@
+:root {
+    /* 로고 색상 */
+    --logoColor : #fef6e4;
+    /* 텍스트 색상 */
+    --textColor : #001858;
+    /* 마우스 오버 색상 */
+    --mouseOverColor : #f582ae;
+}
+
+body {
+    margin : 0;
+}
+
+.navbar {
+    display : flex;
+    justify-content: space-around;
+    background : #fef6e4;
+}
+
+.navbar-logo {
+    display : flex;
+}
+
+.navbar-logo > a{
+    display : inherit;
+    font-size : 20px;
+    align-items: center;
+    text-decoration: none;
+}
+    .navbar-logo > a > i {
+        padding : 0px 5px;
+        color : var(--logoColor);
+    }
+
+    .navbar-logo > a > h1 {
+        margin : 0;
+        color : var(--textColor);
+    }
+
+.navbar-menu > ul {
+    display : flex;
+    list-style:  none;
+}
+
+    .navbar-menu li {
+        padding : 8px 12px;
+    }
+
+    .navbar-menu li:hover {
+        background: var(--mouseOverColor);
+        border-radius: 6px;
+    }
+
+    .navbar-menu li > a {
+        text-decoration: none;
+        color :  var(--textColor);
+    }
+
+.navbar-links {
+    display : flex;
+    align-items: center;
+}
+
+    .navbar-links  a{
+        padding : 8px 12px;
+        color :  var(--textColor);
+    }
+
+.navbar-btn { 
+    display : none;
+    cursor:pointer;
+}
+@media screen and (max-width : 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-logo > a {
+        padding : 5px 10px;
+    }
+
+    .navbar-menu {
+        display : none;
+    }
+
+    .navbar-menu > ul { 
+        flex-direction: column;
+        padding : 0;
+        width : 100%;
+    }
+
+        .navbar-menu > ul > li {
+            cursor : pointer;
+            text-align : center;
+        }
+
+    .navbar-links {
+        display: none;
+        justify-content: center;
+        padding : 8px 12px;
+    }
+
+    .navbar-btn {
+        display: block;
+        position: absolute;
+        top : 8px;
+        right : 20px;
+        font-size: 25px;
+        color :  var(--textColor);
+    }
+
+    .active {
+        display : flex;
+    }
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #f582ae;
+  color: #001858;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
