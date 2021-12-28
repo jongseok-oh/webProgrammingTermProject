@@ -9,7 +9,7 @@ db_config.connect(db);
 
 router.get("/", (req, res) => {
   if (!req.session.user) {
-    res.send(
+    return res.send(
       "<script>alert('로그인을 해주세요.');location.href='/login';</script>"
     );
   }
@@ -18,7 +18,7 @@ router.get("/", (req, res) => {
 
 router.get("/1", (req, res) => {
   if (!req.session.user) {
-    res.send(
+    return res.send(
       "<script>alert('로그인을 해주세요.');location.href='/login';</script>"
     );
   }
@@ -27,7 +27,7 @@ router.get("/1", (req, res) => {
 
 router.get("/2", (req, res) => {
   if (!req.session.user) {
-    res.send(
+    return res.send(
       "<script>alert('로그인을 해주세요.');location.href='/login';</script>"
     );
   }
@@ -36,7 +36,7 @@ router.get("/2", (req, res) => {
 
 router.get("/3", (req, res) => {
   if (!req.session.user) {
-    res.send(
+    return res.send(
       "<script>alert('로그인을 해주세요.');location.href='/login';</script>"
     );
   }
@@ -45,7 +45,7 @@ router.get("/3", (req, res) => {
 
 router.get("/FAQ", (req, res) => {
   if (!req.session.user) {
-    res.send(
+    return res.send(
       "<script>alert('로그인을 해주세요.');location.href='/login';</script>"
     );
   }
@@ -54,7 +54,7 @@ router.get("/FAQ", (req, res) => {
 
 router.post("/FAQ", (req, res) => {
   if (!req.session.user) {
-    res.send(
+    return res.send(
       "<script>alert('로그인을 해주세요.');location.href='/login';</script>"
     );
   }
